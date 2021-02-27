@@ -20,7 +20,7 @@
   tags: ["packages","nordic"]
 
 - name: add theme 
-  command: gsettings set org.gnome.desktop.interface gtk-theme "Nordic"
+  command: gsettings set org.cinnamon.desktop.interface gtk-theme "Nordic"
   
 - name: add preference 
-  command: gsettings set org.gnome.desktop.wm.preferences theme "Nordic"
+  command: gsettings set org.cinnamon.desktop.wm.preferences theme "Nordic"
