@@ -15,8 +15,8 @@
 - name: unzip to /usr/share/themes/
   unarchive:
     copy=no
-    src=/tmp/master.zip
-    dest= /usr/share/themes/
+    src={{nordic_tmp}}
+    dest={{nordic_install_dir}}
   tags: ["packages","nordic"]
 
 - name: add theme via gsettings
