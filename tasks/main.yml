@@ -9,7 +9,7 @@
   tags: ["packages","nordic"]
 
 - name: Download zip to temp folder
-  get_url: url={{noric_url}} dest={{nordic_tmp}}
+  get_url: url={{nordic_url}} dest={{nordic_tmp}}
   tags: ["packages","intellij"]
 
 - name: unzip to /usr/share/themes/
