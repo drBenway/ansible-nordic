@@ -9,7 +9,7 @@
   tags: ["packages","nordic"]
 
 - name: Download zip to temp folder
-  get_url: url=https://github.com/EliverLara/Nordic/archive/master.zip dest=/tmp/master.zip
+  get_url: url={{noric_url}} dest={{nordic_tmp}}
   tags: ["packages","intellij"]
 
 - name: unzip to /usr/share/themes/
