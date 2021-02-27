@@ -1,0 +1,25 @@
+---
+- name: Install packages using apt
+  apt:
+    name: 
+        - tar
+        - unzip
+    state: present
+    update_cache: no
+  tags: ["packages","nordic"]
+
+- name: Download zip to temp folder
+  get_url: url=https://github.com/EliverLara/Nordic/archive/master.zip dest=/tmp/master.zip
+  tags: ["packages","intellij"]
+
+- name: unzip to /usr/share/themes/
+  unarchive:
+    copy=no
+    src=/tmp/master.zip
+    dest= /usr/share/themes/
+  tags: ["packages","nordic"]
+
+- name: add theme via gsettings
+  command: |
+    gsettings set org.gnome.desktop.interface gtk-theme "Nordic"
+    gsettings set org.gnome.desktop.wm.preferences theme "Nordic"
