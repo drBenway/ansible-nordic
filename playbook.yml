@@ -1,4 +1,4 @@
 --- 
 - hosts: localhost
   roles: 
-   - {role: noridc} 
+   - {role: nordic} 
