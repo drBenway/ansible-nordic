@@ -19,7 +19,8 @@
     dest={{nordic_install_dir}}
   tags: ["packages","nordic"]
 
-- name: add theme via gsettings
-  command: |
-    gsettings set org.gnome.desktop.interface gtk-theme "Nordic"
-    gsettings set org.gnome.desktop.wm.preferences theme "Nordic"
+- name: add theme 
+  command: gsettings set org.gnome.desktop.interface gtk-theme "Nordic"
+  
+- name: add preference 
+  command: gsettings set org.gnome.desktop.wm.preferences theme "Nordic"
